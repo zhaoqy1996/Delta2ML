@@ -9,7 +9,11 @@ This project provides a pytorch implementation of a $\Delta^2$-learning model th
 * pandas=1.2.4 
 * numpy=1.23.4
 * pytorch>=1.10.0
-
+  
+You can simply install the anaconda environment by
+```
+conda env create -f environment.yml
+```
 
 ### Usage
 1. Put xyz files of the your target geometries into a folder (e.g., input\_geo) which contains GFN2-xTB optimized geometries of transition state and individual reactant and product. For multi-molecular reactions, like A+B-->C, we recommend optimize A and B seperately.
