@@ -33,4 +33,4 @@ jobs:
         python predict.py -h
     - name: Test 2 run the model on an examle
       run: |
-        python predict.py -g examples/Glucose/input_geo/ -e examples/Glucose/xTB_energy.csv -l DFT -o test.csv
+        python predict.py -g examples/Glucose-TSs/input_geo/ -e examples/Glucose-TSs/xTB_energy.csv -l DFT -o test.csv
