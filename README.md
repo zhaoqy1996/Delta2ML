@@ -28,7 +28,7 @@ python predict.py -g input_geo -e xTB_energy.csv -l DFT -o output.csv
 4. One specific example is:
 
 ```
-python predict.py -g examples/YARPv2/input_geo/ -e examples/YARPv2/xTB_energy.csv -l DFT -o test_YARP2.csv
+python predict.py -g examples/YARPv2-TSs/input_geo/ -e examples/YARPv2-TSs/xTB_energy.csv -l DFT -o test_YARP2.csv
 ```
 
 ### Computing the activation energy
