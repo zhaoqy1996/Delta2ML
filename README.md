@@ -44,28 +44,14 @@ In this example, the reactant is named as 'XSASRUDTFFBDDK' and all other geometr
 python parse_DE.py
 ```
 
-The output looks like
+The output looks like:
+
 Activation energy of XSASRUDTFFBDDK_38_0_0 is  63.14 kcal/mol
+
 Activation energy of XSASRUDTFFBDDK_24_0_1 is  82.20 kcal/mol
+
 Activation energy of XSASRUDTFFBDDK_34_1_0 is  39.24 kcal/mol
-Activation energy of XSASRUDTFFBDDK_9_0_2 is  55.74 kcal/mol
-Activation energy of XSASRUDTFFBDDK_13_1_0 is  68.57 kcal/mol
-Activation energy of XSASRUDTFFBDDK_21_0_0 is  54.10 kcal/mol
-Activation energy of XSASRUDTFFBDDK_6_0_0 is  67.83 kcal/mol
-Activation energy of XSASRUDTFFBDDK_10_0_3 is  54.51 kcal/mol
-Activation energy of XSASRUDTFFBDDK_13_2_0 is  73.37 kcal/mol
-Activation energy of XSASRUDTFFBDDK_6_0_1 is  67.08 kcal/mol
-Activation energy of XSASRUDTFFBDDK_5_0_3 is  75.62 kcal/mol
-Activation energy of XSASRUDTFFBDDK_36_0_1 is  52.40 kcal/mol
-Activation energy of XSASRUDTFFBDDK_34_1_2 is  35.72 kcal/mol
-Activation energy of XSASRUDTFFBDDK_10_0_0 is  53.91 kcal/mol
-Activation energy of XSASRUDTFFBDDK_24_0_3 is  84.21 kcal/mol
-Activation energy of XSASRUDTFFBDDK_36_0_0 is  60.10 kcal/mol
-Activation energy of XSASRUDTFFBDDK_9_0_1 is  57.40 kcal/mol
-Activation energy of XSASRUDTFFBDDK_29_0_3 is  69.00 kcal/mol
-Activation energy of XSASRUDTFFBDDK_25_0_3 is  36.86 kcal/mol
-Activation energy of XSASRUDTFFBDDK_38_0_3 is  64.77 kcal/mol
-Activation energy of XSASRUDTFFBDDK_24_0_2 is  80.87 kcal/mol
-Activation energy of XSASRUDTFFBDDK_10_0_1 is  53.08 kcal/mol
+
+...
 
 ### Computing the enthalpies of reaction
