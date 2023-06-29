@@ -55,3 +55,9 @@ Activation energy of XSASRUDTFFBDDK_34_1_0 is  39.24 kcal/mol
 ...
 
 ### Computing the enthalpies of reaction
+In addition to the single point energy, we also trained a model to predict DFT-level enthalpies. Note that this model is only trained on equilibrium structures thus can only be used for enthalpies of reaction prediction. The usage is similar to "predict.py":
+
+```
+python predict_H.py -g input_geo -e xTB_energy.csv -o output.csv
+```
+
