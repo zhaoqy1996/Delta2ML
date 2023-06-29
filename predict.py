@@ -70,13 +70,13 @@ def main(argv):
                         help = 'The program expects a folder of xyz files which contain GFN2-xTB optimized geometries')
 
     parser.add_argument('-e', dest='energy', default='xTB_energy.csv',
-                        help = 'The program expects a csv file of GFN2-xTB level energy (match with input geometry)')
+                        help = 'The program expects a csv file of GFN2-xTB level energy (match with input geometry, in Hartree)')
 
     parser.add_argument('-l', dest='level', default='DFT',
                         help = 'Energies at two level of theory can be selected, DFT (B3LYP-D3/TZVP) and Gaussian-4')
 
     parser.add_argument('-o', dest='output', default='Delta2_pred.csv',
-                        help = 'Output file storing the ')
+                        help = 'Output file storing the energies and uncertainty information (in Hartree)')
 
     # parse configuration
     args=parser.parse_args()
