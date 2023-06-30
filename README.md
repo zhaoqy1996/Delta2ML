@@ -33,7 +33,7 @@ python predict.py -g examples/YARPv2-TSs/input_geo/ -e examples/YARPv2-TSs/xTB_e
 
 NOTE 1: All the input and output energies should be/are in Hartree!!!
 
-NOTE 2: Please do not use this model to predict the energies for molecules with less than three heavy atoms, e.g. Nitrogen (N2). For instead, you can easily compute those by yourself or look the values in "B3LYPDE_TZVP_Ene.json". For example, the run the following line in python:
+NOTE 2: Please do not use this model to predict the energies for molecules with less than three heavy atoms, e.g. Nitrogen (N2). For instead, you can easily compute those by yourself or look up the values in "B3LYPDE_TZVP_Ene.json" by SMILES strings (e.g., N#N). For example, you can run the following lines in python to obtain the single point energy of methane:
 
 ```
 import json
