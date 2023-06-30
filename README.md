@@ -16,7 +16,7 @@ conda env create -f environment.yml
 ```
 
 ### Basic Usage
-1. Put xyz files of the your target geometries into a folder (e.g., input\_geo) which contains GFN2-xTB optimized geometries of either transition state or individual reactant and product (or both). For multi-molecular reactions, like A+B-->C, we recommend optimize A and B seperately. NOTE: All the input and output energies should be/are in Hartree!!!
+1. Put xyz files of the your target geometries into a folder (e.g., input\_geo) which contains GFN2-xTB optimized geometries of either transition state or individual reactant and product (or both). For multi-molecular reactions, like A+B-->C, we recommend optimize A and B seperately.
 
 2. Prepare a csv file containing 'name' (match with file name in the input geometry folder) and 'xTB\_ene' (xTB level single point energy). 
 
@@ -29,6 +29,16 @@ python predict.py -g input_geo -e xTB_energy.csv -l DFT -o output.csv
 
 ```
 python predict.py -g examples/YARPv2-TSs/input_geo/ -e examples/YARPv2-TSs/xTB_energy.csv -l DFT -o test_YARP2.csv
+```
+
+NOTE 1: All the input and output energies should be/are in Hartree!!!
+
+NOTE 2: Please do not use this model to predict the energies for molecules with less than three heavy atoms, e.g. Nitrogen (N2). For instead, you can easily compute those by yourself or look the values in "B3LYPDE_TZVP_Ene.json". For example, the run the following line in python:
+
+```
+import json
+with open('B3LYPD3_TZVP_Ene.json','r') as f: ene = json.load(f)
+print(ene['C']['E0'])
 ```
 
 ### Computing the activation energy
