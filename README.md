@@ -42,7 +42,7 @@ print(ene['C']['E0'])
 ```
 
 ### Computing the activation energy
-To compute the activation energy, users need to first obtain the GFN2-xTB optimized reactant(s) and transition state(s) and then apply the $\Delta^2$ model to obtain more accurate energies. In the end, simply substracting the (summation of) reactant energies by the transition state energy. Here provide one example that computes the activation energies of 3-(Hydroperoxy)propanal.
+To compute the activation energy, users need to first obtain the GFN2-xTB optimized reactant(s) and transition state(s) and then apply the $\Delta^2$ model to obtain more accurate energies. In the end, simply substracting the (summation of) reactant energies by the transition state energy. Here provide one example that computes the activation energies of possible 3-(Hydroperoxy)propanal decomposition pathways.
 
 ```
 python predict.py -g examples/KHP_barriers/input_geo/ -e examples/KHP_barriers/xTB_energy.csv -l DFT -o KHP_test.csv
@@ -65,7 +65,7 @@ Activation energy of XSASRUDTFFBDDK_34_1_0 is  39.24 kcal/mol
 ...
 
 ### Computing the enthalpies of reaction
-In addition to the single point energy, we also trained a model to predict DFT-level enthalpies. Note that this model is only trained on equilibrium structures thus can only be used for enthalpies of reaction prediction. The usage is similar to "predict.py":
+In addition to the single point energy prediction, we also trained a model to predict DFT-level enthalpies. Note that this model was only trained on equilibrium structures thus can only be used for enthalpies of reaction prediction. The usage is similar to "predict.py":
 
 ```
 python predict_H.py -g input_geo -e xTB_energy.csv -o output.csv
